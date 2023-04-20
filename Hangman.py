@@ -53,6 +53,7 @@ def draw_Hangman(mistakes):
         E  e    |    / \\
            r ___|___  
          \033[0m '''
+
 def choice_word(words):
     import random
     word = random.choice(words).lower().split()
@@ -132,4 +133,6 @@ while max_guesses > 0:
         print((draw_Hangman(1)))
     else:
         print("Game over! Слово було :", puzzle_word.capitalize())
+        print(draw_Hangman(0))
+
         print(draw_Hangman(0))
