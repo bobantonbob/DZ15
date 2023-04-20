@@ -106,6 +106,7 @@ while max_guesses > 0:
         print("Будь ласка, введіть одну літеру.")
 
 # Перевіряємо, чи введена літера є у слові
+
     if guess in puzzle_word:
         print("Так буква є!")
         guesses += guess
@@ -114,6 +115,7 @@ while max_guesses > 0:
         max_guesses -= 1
 
  # Перевіряємо, чи залишилося ще спроб
+
     if max_guesses == 6:
         print("Ви маєте ", max_guesses - 1, 'спроб якщо....', )
     elif max_guesses == 5:
@@ -133,6 +135,4 @@ while max_guesses > 0:
         print((draw_Hangman(1)))
     else:
         print("Game over! Слово було :", puzzle_word.capitalize())
-        print(draw_Hangman(0))
-
         print(draw_Hangman(0))
